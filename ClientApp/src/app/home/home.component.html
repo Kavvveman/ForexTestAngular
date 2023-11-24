@@ -1,0 +1,68 @@
+<h1>Hello, world!</h1>
+
+
+<div class="row">
+
+  <div class="col-3">
+
+    <h4>FX-u-Like</h4>
+    <h6>Welcome, this is a basic demonstration of the latest forex conversions. </h6>
+    <h6><i>Play around..</i></h6>
+
+    <br />
+
+    <label for="dtpDate">Date:</label> <br />
+    <input type="date" id="dtpDate" />
+
+    <br />
+
+    <label for="txtAmount">Amount:</label>
+    <input type="number" id="txtAmount" />
+
+
+    <button (click)="callBackend()">Call Backend</button>
+    <!-- Should Make button that calls API via angular -->
+    <!--<ConvertCurrencyButton>
+  </ConvertCurrencyButton>-->
+    <!-- <input type="button" value="Convert" onclick="ConvertValues" />-->
+    <!-- <button (click)="callBackendMethod()">Call Backend</button> -->
+  </div>
+  <div class="col-6">
+
+    <label for="cmbFromCurrency">From:</label>
+    <select id="cmbFromCurrency">
+      <option value="1">GBP</option>
+      <option value="2">USD</option>
+    </select>
+    <br />
+    <label for="cmbFromCurrency">To:</label>
+    <select id="cmbToCurrency">
+      <option value="1">GBP</option>
+      <option value="2">USD</option>
+    </select>
+
+  </div>
+  <div class="col-3">
+    <p hidden="hidden" id="txtConvertedAnswer"></p>
+
+    <p hidden="hidden" id="txtError"></p>
+  </div>
+
+
+</div>
+
+
+
+<!--<p>Welcome to your new single-page application, built with:</p>
+<ul>
+  <li><a href='https://get.asp.net/'>ASP.NET Core</a> and <a href='https://msdn.microsoft.com/en-us/library/67ef8sbd.aspx'>C#</a> for cross-platform server-side code</li>
+  <li><a href='https://angular.io/'>Angular</a> and <a href='http://www.typescriptlang.org/'>TypeScript</a> for client-side code</li>
+  <li><a href='http://getbootstrap.com/'>Bootstrap</a> for layout and styling</li>
+</ul>
+<p>To help you get started, we've also set up:</p>
+<ul>
+  <li><strong>Client-side navigation</strong>. For example, click <em>Counter</em> then <em>Back</em> to return here.</li>
+  <li><strong>Angular CLI integration</strong>. In development mode, there's no need to run <code>ng serve</code>. It runs in the background automatically, so your client-side resources are dynamically built on demand and the page refreshes when you modify any file.</li>
+  <li><strong>Efficient production builds</strong>. In production mode, development-time features are disabled, and your <code>dotnet publish</code> configuration automatically invokes <code>ng build</code> to produce minified, ahead-of-time compiled JavaScript files.</li>
+</ul>-->
+<p>The <code>ClientApp</code> subdirectory is a standard Angular CLI application. If you open a command prompt in that directory, you can run any <code>ng</code> command (e.g., <code>ng test</code>), or use <code>npm</code> to install extra packages into it.</p>
