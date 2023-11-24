@@ -18,11 +18,9 @@ namespace ForexTestAngular
                 options.AddPolicy("AllowAngularApp",
                     builder =>
                     {
-                        builder.WithOrigins("htttps:localhost:44481")
+                        builder.WithOrigins("htttps://localhost:44481")
                             .AllowAnyHeader()
-                            .AllowAnyMethod()
-                            .
-                        
+                            .AllowAnyMethod();
                     });
             });
             services.AddHttpClient();
